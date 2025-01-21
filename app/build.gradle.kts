@@ -65,4 +65,12 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     implementation("io.coil-kt:coil:2.4.0")  // Latest stable version
     implementation("io.coil-kt:coil-compose:2.4.0")  // For Jetpack Compose support (optional)
+    // Jetpack Compose UI Testing
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:<compose_version>")
+    // For running UI tests on a device or emulator
+    androidTestImplementation("androidx.compose.ui:ui-test-manifest:<compose_version>")
+    // If you're using UI Testing with a headless environment (e.g., CI), use the following
+    androidTestImplementation("androidx.compose.ui:ui-test:<compose_version>")
+    // Test rules and assertions for Compose testing
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:<compose_version>")
 }
